@@ -26,6 +26,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+    .header{
+        justify-content: left;
+    }
+    .contenedor__izquierdo{
+        width: 80%;
+        justify-content: space-around;
+    }
+
     .contenedor__starwars__titulo{
         justify-content: space-around;
         gap: 30%;

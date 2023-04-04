@@ -59,10 +59,39 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px){    
+    
+    .header{
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .contenedor__izquierdo{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .contenedor__logo{
+        width: 40%;
+        justify-content: left;
+    }
+    .contenedor__busqueda{
+        width: 30%;
+        justify-content: center;
+        
+    }
+    .header__inpbusqueda{
+        width: 70%;
+    }
+    .header__lupa{
+        width: 20%;
+        background-position: center;
+    }
+
+
+
     .main{
         height: 20rem;
     }
-    
     .main__formulario{
         width: 100%;
         align-items: center;

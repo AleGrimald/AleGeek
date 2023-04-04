@@ -21,8 +21,9 @@
     align-items: center;
     justify-content: center;
 }
+
 .contenedor__busqueda{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +31,7 @@
     background-color: #7da7bb56;
 }
 .header__inpbusqueda{
-    width: 90%;
+    width: 85%;
     padding: .4rem;
     text-align: center;
     border-radius: 15px;
@@ -43,12 +44,13 @@
     font-size: 14px;
 }
 .header__lupa{
-    width: 10%;
+    width: 15%;
     border-radius: 15px;
-}
-.lupa{
-    width: 90%;
-    height: 20px;
+    border: none;
+    cursor: pointer;
+    background: url(../imagenes/header/lupa.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 /*Contenedor Derecho, login*/
@@ -71,25 +73,32 @@
     font-size: 16px;
 }
 
-
-
 @media (min-width: 768px) and (max-width: 1024px){
     /*HEADER*/
     .header{
         width: 100%;
+        justify-content: space-around;
     }
     /*Contenedor Izquierdo, logo y inp de busqueda*/
     .contenedor__izquierdo{
-        width: 70%;
-        gap: .5rem;
+        width: 50%;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .contenedor__logo{
+        width: 30%;
+    }
+    .contenedor__busqueda{
+        width: 55%;
     }
     .header__inpbusqueda{
-        padding: .2rem;
+        width: 80%;
     }
     
     /*Contenedor Derecho, login*/
     .contenedor__derecho{
         width: 25%;
+        justify-content: space-around;
     }
 }
 
@@ -107,27 +116,25 @@
     .contenedor__izquierdo{
         width: 100%;
         justify-content: left;
-        gap: .2rem;
+        gap: .5rem;
     }
     .contenedor__logo{
-        width: 35%;
+        width: 40%;
     }
     .header__logo{
-        width: 30%;
+        width: 100%;
     }
     .contenedor__busqueda{
         width: 10%;
     }
     .header__inpbusqueda{
-        padding: 0;
-        font-weight: 100;
-        font-size: 12px;
         display: none;
     }
     .header__lupa{
         width: 60%;
         border-radius: 50%;
     }
+
 
     /*Contenedor Derecho, login*/
     .contenedor__derecho{

@@ -15,22 +15,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <header class="header">
+<body>    
+        <header class="header">
             <section class="contenedor__izquierdo">
                 <div class="contenedor__logo">
-                    <img class="header__logo" src="./assets/imagenes/header/joystick.svg" alt="Logotipo de Alura Geek">
-                    <img class="header__logo" src="./assets/imagenes/header/alura.svg" alt="">
-                    <img class="header__logo" src="./assets/imagenes/header/geek.svg" alt="">
+                    <a href="./index.html"><img class="header__logo" src="./assets/imagenes/header/Logo completo.png" alt="Logotipo de Alura Geek"></a>
                 </div>
         
                 <div class="contenedor__busqueda">
                     <input class="header__inpbusqueda" type="search" name="busqueda" id="" placeholder="¿Que desea buscar?">
-                    <a href="" class="header__lupa">
-                        <img class="lupa" src="./assets/imagenes/header/lupa.svg" alt="icono de lupa">
-                    </a>
-                    
+                    <input type="submit" class="header__lupa" value="">
                 </div>
             </section>
             
@@ -44,7 +40,7 @@
             <h1 class="banner__h1">Febrero Promocional</h1>
             <p class="banner__p">Productos seleccionados con 33% de descuento</p>
             <div class="contenedor__boton">
-                <input class="banner__boton" type="button" value="Ver Consolas">
+                <button class="banner__boton" type="button"><a href="#consolas" class="consolas">Ver Consolas</a></button>
             </div>
         </div>
     </section>
@@ -56,7 +52,7 @@
                 <p class="titulo__swparrafo">Star Wars</p>
             </div>
             <div class="contenedor__vertodo">
-                <a href="" class="vertodo__a">Ver todo</a>
+                <a href="../3- Pagina Productos Listado Ventas/productos.html" class="vertodo__a">Ver todo</a>
                 <img  class="vertodo__img" src="./assets/imagenes/productos starwars/flecha derecha.svg" alt="">
             </div>
         </div>
@@ -101,7 +97,7 @@
             </div>
         </div>
 
-        <div class="contenedor__starwars__items">
+        <div class="contenedor__starwars__items" id="consolas">
             <div class="item__starwars">
                 <img src="./assets/imagenes/productos consola/1 consola.png" alt="" srcset="">
                 <p class="item__descipcion">Joystick XBox</p>
@@ -183,9 +179,7 @@
     <footer class="footer">
         <section class="footer__contacto">
             <div class="contacto__logo">
-                <img class="header__logo" src="./assets/imagenes/header/joystick.svg" alt="Logotipo de Alura Geek">
-                <img class="header__logo" src="./assets/imagenes/header/alura.svg" alt="">
-                <img class="header__logo" src="./assets/imagenes/header/geek.svg" alt="">
+                <a href="../1- Pagina Principal/index.html"><img class="header__logo" src="../1- Pagina Principal/assets/imagenes/header/Logo completo.png" alt="Logotipo de Alura Geek"></a>
             </div>
 
             <nav class="contacto__lista">
