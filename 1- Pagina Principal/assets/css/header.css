@@ -1,0 +1,141 @@
+.header{
+    width: 90%;
+    margin: auto;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Contenedor Izquierdo, logo y inp de busqueda*/
+.contenedor__izquierdo{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.contenedor__logo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor__busqueda{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #7da7bb56;
+}
+.header__inpbusqueda{
+    width: 90%;
+    padding: .4rem;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #A2A2A2;
+    background-color: #7fafe600;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+}
+.header__lupa{
+    width: 10%;
+    border-radius: 15px;
+}
+.lupa{
+    width: 90%;
+    height: 20px;
+}
+
+/*Contenedor Derecho, login*/
+.contenedor__derecho{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__a{
+    padding: .3rem 2rem;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    background-color: white;
+    text-decoration: none;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    /*HEADER*/
+    .header{
+        width: 100%;
+    }
+    /*Contenedor Izquierdo, logo y inp de busqueda*/
+    .contenedor__izquierdo{
+        width: 70%;
+        gap: .5rem;
+    }
+    .header__inpbusqueda{
+        padding: .2rem;
+    }
+    
+    /*Contenedor Derecho, login*/
+    .contenedor__derecho{
+        width: 25%;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 767px){
+    /*HEADER*/
+    .header{
+        width: 90%;
+        margin: auto;
+        height: 5rem;
+        justify-content: space-around;
+    }
+
+    /*Contenedor Izquierdo, logo y inp de busqueda*/
+    .contenedor__izquierdo{
+        width: 100%;
+        justify-content: left;
+        gap: .2rem;
+    }
+    .contenedor__logo{
+        width: 35%;
+    }
+    .header__logo{
+        width: 30%;
+    }
+    .contenedor__busqueda{
+        width: 10%;
+    }
+    .header__inpbusqueda{
+        padding: 0;
+        font-weight: 100;
+        font-size: 12px;
+        display: none;
+    }
+    .header__lupa{
+        width: 60%;
+        border-radius: 50%;
+    }
+
+    /*Contenedor Derecho, login*/
+    .contenedor__derecho{
+        width: 20%;
+    }
+    .login__a{
+        padding: .1rem 1rem;
+        font-weight: 100;
+        font-size: 12px;
+    } 
+}

@@ -1,0 +1,224 @@
+.main{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Contiene la seccion de productos Starwars en Main*/
+.contenedor__starwars__titulo{
+    width: 100%;
+    height: 5rem;
+    padding: 0 .5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo__swparrafo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 0;
+    color: #464646;
+}
+.contenedor__vertodo{
+    width: 10%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.vertodo__a{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2A7AE4;
+}
+.vertodo__img{
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Contiene los productos en las listas de ventas*/
+
+.contenedor__starwars__items{
+    width: 100%;
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.item__starwars{
+    display: flex;
+    place-items: left;
+    flex-flow: column wrap;
+    padding-bottom: .2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.item__starwars:hover{
+    filter: brightness(.6);
+    background-color: #ffffff;
+}
+.item__descipcion{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0;
+    color: #464646;
+    margin-left: .3rem;
+}
+.item__precio{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0;
+    color: #464646;
+    margin-left: .3rem;
+}
+.item__a{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: .3rem;
+}
+.item__starwars>img{
+    width: 176px;
+    height: 174px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .main{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    /* Contiene la seccion Titulo de productos en Main*/
+    .contenedor__starwars__titulo{
+        padding: 0;    
+        justify-content: space-around;
+    }
+    .starwars__titulo{
+        width: 40%;
+    }
+    .titulo__swparrafo{
+        font-size: 22px;
+    }
+    .contenedor__vertodo{
+        width: 40%;
+        height: 2rem;
+        justify-content: right;
+    }
+    .vertodo__a{
+        font-size: 16px;
+    }    
+
+    /* Contiene los productos en las listas de ventas*/
+    
+    .contenedor__starwars__items{
+        width: 100%;
+        padding: 1.5rem 1.5rem;
+    
+        justify-content: left;
+        gap: 1rem;
+        overflow: scroll;
+    }
+    .item__starwars{
+        display: flex;
+        place-items: left;
+        flex-flow: column wrap;
+    }
+    .item__descipcion{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 0;
+        color: #464646;
+    }
+    .item__precio{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 0;
+        color: #464646;
+    }
+    .item__a{
+        text-decoration: none;
+        color: #2A7AE4;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .item__starwars>img{
+        width: 176px;
+        height: 174px;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 767px){
+
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+    /* Contiene la seccion Titulo de productos en Main*/
+    .contenedor__starwars__titulo{
+        padding: 0;    
+        justify-content: space-around;
+    }
+    .starwars__titulo{
+        width: 40%;
+    }
+    .titulo__swparrafo{
+        font-size: 22px;
+    }
+    .contenedor__vertodo{
+        width: 40%;
+        height: 1rem;
+        justify-content: right;
+    }
+    .vertodo__a{
+        font-size: 14px;
+    }    
+
+    /* Contiene los productos en las listas de ventas*/
+    
+    .contenedor__starwars__items{
+        width: 100%;
+        padding: 0rem 1rem;
+        justify-content: left;
+        gap: 1rem;
+        overflow: scroll;
+    }
+    .item__starwars{
+        margin-bottom: 1.5rem;
+    }
+    .item__descipcion{
+        font-size: 14px;
+    }
+    .item__precio{
+        font-size: 16px;
+    }
+    .item__a{
+        font-size: 14px;
+    }
+    .item__starwars>img{
+        width: 156px;
+        height: 156px;
+    }
+}

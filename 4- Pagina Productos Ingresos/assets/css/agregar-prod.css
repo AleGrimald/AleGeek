@@ -1,0 +1,140 @@
+.main{
+    widows: 100%;
+    height: 30rem;
+}
+
+.login__a{
+    padding: .5rem .7rem;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #2A7AE4;
+}
+
+.main__formulario{
+    width: 70%;
+}
+
+.formulario__titulo{
+    text-align: left;
+    font-size: 32px;
+}
+
+.inp__url,
+.inp__categoria,
+.inp__nombre_producto,
+.inp__precio,
+.textarea__descripcion{
+    padding: .6rem 0 .6rem 1rem;
+    border: none;
+    outline: none;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+}
+.textarea__descripcion{
+    height: 5rem;
+    resize: none;
+}
+
+.inp__url::placeholder,
+.inp__categoria::placeholder,
+.inp__precio::placeholder,
+.inp__nombre_producto::placeholder,
+.textarea__descripcion::placeholder{
+    padding: .5rem 0 0 0rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .main{
+        width: 100%;
+    }
+    .inp__url,
+    .inp__categoria,
+    .inp__nombre_producto,
+    .inp__precio,
+    .textarea__descripcion{
+        width: 100%;
+        padding: .5rem 0 .5rem 1rem;
+    }
+
+    .contenedor__boton, .formulario__boton{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__formulario{
+        width: 100%;
+    }
+    .formulario__titulo{
+        width: 90%;
+        font-size: 22px;
+    }
+    .inp__url,
+    .inp__categoria,
+    .inp__nombre_producto,
+    .inp__precio,
+    .textarea__descripcion{
+        width: 80%;
+        padding: .5rem 0 .5rem 1rem;
+    }
+    .contenedor__boton, .formulario__boton{
+        width: 90%;
+        font-size: 16px;
+    }
+
+
+    .header{
+        width: 100%;
+        justify-content: center;
+        gap: .5rem;
+    }
+    .contenedor__izquierdo{
+        width: 55%;
+        height: 100%;
+        justify-content: center;
+    }
+    .contenedor__logo{
+        width: 60%;
+    }
+    .contenedor__busqueda{
+        width: 20%;
+        padding: .2rem 0;
+    }
+    .header__lupa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor__derecho{
+        width: 40%;
+    }
+    .login__a{
+        width: 100%;
+        padding: .5rem 0;
+        text-align: center;
+    
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 12px;
+        color: #2A7AE4;
+    }
+}
+

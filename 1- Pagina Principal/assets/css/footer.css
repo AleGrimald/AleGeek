@@ -1,0 +1,194 @@
+.footer{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #EAF2FD;
+}
+
+/* Contenedor de contacto en footer*/
+.footer__contacto{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background: #EAF2FD;
+}
+
+/*Contiene el contenedor del logo del footer, los estilos del logo estan en header.css*/
+.contacto__logo{
+    width: 30%;
+}
+
+/* Contiene lista de links del footer*/
+.contacto__lista{
+    width: 40%;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+    gap: 1rem;
+    list-style: none;
+}
+.lista__item> a{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    text-decoration: none;
+}
+
+/* Contiene el formulario, inp, lbl, txtarea, legend, btn*/
+.footer__formulario{
+    width: 40%;
+
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.form__titulo{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+}
+.form__lbl_nombre{
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+    color: #A2A2A2;
+}
+.form__inp_nombre{
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: .5rem 0rem .5rem 1rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.form__textarea{
+    width: 90%;
+    height: 4rem;
+    resize: none;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+    border-color: #A2A2A2;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+
+}
+.form__boton{
+    background: #2A7AE4;
+    padding: .5rem;
+    border: none;
+    color: white;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Ale{
+    width: 100%;
+    padding: .6rem 0;
+    text-align: center;
+    line-height: .7rem;
+    background-color: rgba(255, 255, 255, 0.685);
+
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #464646;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .footer__contacto{
+        width: 30%;
+        flex-flow: column wrap;
+    }
+    .contacto__logo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .contacto__lista{
+        width: 100%;
+    }
+    .lista{
+        width: 100%;
+        flex-flow:column wrap;
+        padding: 0;
+    }
+    .form__textarea{
+        margin-top: .5rem;
+    }
+    .form__boton{
+        margin-top: .5rem;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 767px){
+    .footer{
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    .footer__contacto{
+        width: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto__logo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .contacto__lista{
+        width: 60%;
+    }
+    .lista{
+        width: 100%;
+        flex-flow:column wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .footer__formulario{
+        width: 100%;
+        display: flex;
+        margin-top: .5rem;
+        justify-content: center;
+    }
+    .formulario{
+        width: 90%;
+    }
+
+}
